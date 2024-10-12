@@ -21,7 +21,118 @@
 section{
     padding:  50px 10%;
 }
+*::selection{
+    color: #fff;
+    background-color: var(--second-color);
+
+}
 img{
     width: 100%;
+}
+header{
+    position: fixed;
+    width: 100;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow:  0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: (var(--second-color));
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbara a:hover{
+    color: var(--main-color)
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.home{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ebdbc8;
+    gap: 1rem;
+}
+
+.home-text{
+    flex:  1 1 17rem;
+}
+.home-img{
+    flex:  1 1 17rem;
+}
+
+.home-img img{
+    animation: animate 3s linear infinite;
+} @keyframes animate {
+    0%{
+        transform: translate(-11px,0);
+    }
+    50%{
+        transform: translate(-0px,-11px);
+    }
+    0%{
+        transform: translate(-11px,0);
+    }
+}
+
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.home-text h1{
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.home-text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: capitalize;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn{
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
+.btn:hover{
+    color: #fff;
+    background: var(--second-color);
 }
 
